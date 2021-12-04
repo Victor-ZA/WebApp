@@ -63,65 +63,61 @@ body {
   background-color:lavenderblush;
 }
 
-/*--- Product ---*/
+/*-- Slider --*/
 
-.product {
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+.swiper-wrapper {
+  display: inline-block;
+}
+
+.swiper-slide {
+
+}
+
+.card-vip {
+  margin: 10px 0;
+  width: 160px;
+  height: 280px;
+  border: 1px dashed blue;
+}
+
+.inline {
   display: flex;
 }
 
-.slides{
-  width: 656px;
-  text-align: center;
+.card-vip img {
+  height: 200px;
+  width: 120px;
 }
 
-.slide {
-  flex: middle;
-  width: auto;
-  left: 0px;
-  top: 0px;
-  opacity: 0;
-  z-index: 1;
-
-  -webkit-transition: opacity 1s;
-  -moz-transition: opacity 1s;
-  -o-transition: opacity 1s;
-  transition: opacity 1s;
+.card-vip .composition {
+  width: 40px;
+  height: 200px;
 }
 
-.showing {
-  opacity: 1;
-  z-index: 2;
+.card-vip .history {
+  display: block;
+  width: 200px;
+  height: 80px;
 }
 
-.slider__control {
-  display: flex;
-  position: relative;
-  width: 32px;
-  height: 32px;
-  padding: 5px;
-  margin: auto auto;
-
-  font-size: 0;
-  opacity: 0.05;
-  background-repeat: no-repeat;
-  background-position: center center;
-  border: 1px solid rgba(255, 203, 120, 0.1);
+.swiper-button-prev {
+  position: fixed;
+  border: 1px solid blue;
+  width: 40px;
+  height: 300px;
 }
 
-.slider__control:hover {
-  opacity: 1;
+.swiper-button-next {
+  position: fixed;
+  border: 1px solid blue;
+  width: 40px;
+  height: 300px;
 }
-
-.slider__control_prev{
-  flex: left;
-  background-image: url("../img/left-arrow.png");
-}
-
-.slider__control_next{
-  flex: right;
-  background-image: url("../img/right-arrow.png");
-}
-
 
 /*--- Footer ---*/
 

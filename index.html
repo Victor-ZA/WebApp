@@ -4,11 +4,12 @@
     <meta charset="utf-8" />
     <title>Продукт</title>
     <link rel="stylesheet" href="style/style.css">
+    <script src='./js/script.js' type="module"></script>
   </head>
   <body>
     <div class="header container-wide">
       <div class="header-name">
-        <img src='../img/header-product.jpg' width="32px" height="32px"> Хедер-найм
+        <img src='./img/header-product.jpg' width="32px" height="32px"> Хедер-найм
       </div>
       <div class="header-menu">
         <div class="header-menu_header">
@@ -23,29 +24,37 @@
       </div>
     </div>
 
-    <div class="product container">
-      <a class="slider__control slider__control_prev" onclick="return prevProduct()" href="#" role="button">Prev</a>
-      <div class="slides">
-        <div class="slide">
-          <div class="product_item">
-            <div class="product_item_first">
-              <img src='./img/bottle-left.jpg'>
-              <p class=''>
+    <div class="swiper container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        
+        <div class="swiper-button-prev"></div>
+        
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="card-vip">
+            <div class="inline">
+              <img src='/img/bottle-left.jpg' alt="Vip product">
+              <div class="composition">Состав</div>
             </div>
-            <div class="product_item_second">
-              <p></p>
-            </div>
-            </p>
+            <div class="history">History</div>
           </div>
         </div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
       </div>
-      <a class="slider__control slider__control_next" onclick="return nextProduct()" href="#" role="button">Next</a>
+
+      <!-- If we need navigation buttons -->
+      
+      <div class="swiper-button-next"></div>
+    
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
     </div>
 
     <div class="footer container-wide">
       Футер
     </div>
 
-    <script src='../js/script.js'></script>
   </body>
 </html>
